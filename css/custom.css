@@ -8,3 +8,12 @@
     left: 0 !important;
     /* 鼠标悬停是左侧缩进归零，完全显示按钮 */
   }
+
+
+/* 让页面正文卡片容器宽一些 */
+/* .layout {
+  max-width: 1500px;
+} */
+/* .layout>div:first-child {
+  width: 100%;
+} */
