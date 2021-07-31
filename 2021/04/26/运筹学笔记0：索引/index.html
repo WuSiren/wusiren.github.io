@@ -1,0 +1,291 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>运筹学笔记0：索引 | 终食之间</title><meta name="keywords" content="学术,运筹学,笔记,机密,学习"><meta name="author" content="吴思仁,2117675061@qq.com"><meta name="copyright" content="吴思仁"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="已加密，请输入密码查看。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="运筹学笔记0：索引">
+<meta property="og:url" content="https://wusiren.github.io/2021/04/26/%E8%BF%90%E7%AD%B9%E5%AD%A6%E7%AC%94%E8%AE%B00%EF%BC%9A%E7%B4%A2%E5%BC%95/index.html">
+<meta property="og:site_name" content="终食之间">
+<meta property="og:description" content="已加密，请输入密码查看。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://i.loli.net/2021/04/26/W5ycKr21tMOUHbe.jpg">
+<meta property="article:published_time" content="2021-04-26T12:32:39.000Z">
+<meta property="article:modified_time" content="2021-07-29T10:50:54.099Z">
+<meta property="article:author" content="吴思仁">
+<meta property="article:tag" content="学术">
+<meta property="article:tag" content="运筹学">
+<meta property="article:tag" content="笔记">
+<meta property="article:tag" content="机密">
+<meta property="article:tag" content="学习">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2021/04/26/W5ycKr21tMOUHbe.jpg"><link rel="shortcut icon" href="/myFiles/wusirenlogo.png"><link rel="canonical" href="https://wusiren.github.io/2021/04/26/%E8%BF%90%E7%AD%B9%E5%AD%A6%E7%AC%94%E8%AE%B00%EF%BC%9A%E7%B4%A2%E5%BC%95/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":50,"languages":{"author":"作者: 吴思仁","link":"链接: ","source":"来源: 终食之间","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: true,
+  islazyload: false,
+  isanchor: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = { 
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2021-07-29 18:50:54'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const now = new Date()
+          const hour = now.getHours()
+          const isNight = hour <= 6 || hour >= 18
+          if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+          else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const fontSizeVal = saveToLocal.get('global-font-size')
+    if (fontSizeVal !== undefined) {
+      document.documentElement.style.setProperty('--global-font-size', fontSizeVal + 'px')
+    }
+    })(window)</script><link rel="stylesheet" href="/css/custom.css"  media="defer" onload="this.media='all'"><!-- hexo injector head_end start --><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/l-lin/font-awesome-animation/dist/font-awesome-animation.min.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-butterfly-tag-plugins-plus/lib/tag_plugins.min.css" media="defer" onload="this.media='all'"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 5.4.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" src="/myFiles/wusirenlogo.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">26</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">36</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">6</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-book"></i><span> 文章</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-photo-video"></i><span> 媒体</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/gallery/"><i class="fa-fw fas fa-images"></i><span> 图库</span></a></li><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 影视</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 栏目</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/%E4%B9%A6%E7%94%BB%E9%95%BF%E5%BB%8A/"><i class="fa-fw fas fa-paint-brush"></i><span> 书画长廊</span></a></li><li><a class="site-page child" href="/%E4%BA%91%E6%B8%B8%E8%B6%B3%E8%BF%B9/"><i class="fa-fw fas fa-map-marked-alt"></i><span> 云游足迹</span></a></li><li><a class="site-page child" href="/%E5%9C%B0%E7%90%86%E5%9B%BE%E5%86%8C/"><i class="fa-fw fas fa-atlas"></i><span> 地理图册</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-info"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://i.loli.net/2021/04/26/W5ycKr21tMOUHbe.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">终食之间</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-book"></i><span> 文章</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-photo-video"></i><span> 媒体</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/gallery/"><i class="fa-fw fas fa-images"></i><span> 图库</span></a></li><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 影视</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 栏目</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/%E4%B9%A6%E7%94%BB%E9%95%BF%E5%BB%8A/"><i class="fa-fw fas fa-paint-brush"></i><span> 书画长廊</span></a></li><li><a class="site-page child" href="/%E4%BA%91%E6%B8%B8%E8%B6%B3%E8%BF%B9/"><i class="fa-fw fas fa-map-marked-alt"></i><span> 云游足迹</span></a></li><li><a class="site-page child" href="/%E5%9C%B0%E7%90%86%E5%9B%BE%E5%86%8C/"><i class="fa-fw fas fa-atlas"></i><span> 地理图册</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-info"></i><span> 关于</span></a></div></div><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">运筹学笔记0：索引</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-04-26T12:32:39.000Z" title="发表于 2021-04-26 20:32:39">2021-04-26</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-07-29T10:50:54.099Z" title="更新于 2021-07-29 18:50:54">2021-07-29</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%AD%A6%E6%9C%AF%E5%AD%A6%E4%B9%A0/">学术学习</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%AD%A6%E6%9C%AF%E5%AD%A6%E4%B9%A0/%E8%BF%90%E7%AD%B9%E5%AD%A6%E7%AC%94%E8%AE%B0/">运筹学笔记</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">11</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>1分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="运筹学笔记0：索引"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="密码错误，请再次输入。" data-whm="抱歉，不能被校验，不过您还是能看看解密后的内容。">
+  <script id="hbeData" type="hbeData" data-hmacdigest="2247818fffdc14c49c4f4c8746853ae4fcf0b68d6e9dc2ef96cc3f498fd7c127">b26ccf9243791046d5567e695424e5d80044303a065da18464cb3be56d793d4380b3e95b82746487a9c3c5ae220c2c22df28809b2d4e593eef9c615fe57b17007e6e708bc4b2f6abc0d83f3f2f05e10738e0918bf1caee6563dd5cc1d3143ce58b483ece73f7a939608ea704e209c246fccda36ae2212ac11996a6a58035fc4dee537725a16bf94481439ef2d1ee437b05751d544748ff2edb5895864c1cbcd1cd00dddcf0663be32154498a6e44789b0d4f5fea68bbd09550f988b8f05582043d4f9c89437043036e3ab4affd14303ad411b65003ae88ae731eccea3fb39a986b761699b52f29dda25563c2f562b8fed375cb3efb2038f4485074544573b23ac811cf31e0b3428f858d1903d29defcf060dfa04b754a56d6223c8169919bd87f42cdea99f412f572c00276b240ce6ddefbdfd2698bb88c3d8d68adda926083e23879e207c70aac7133520511c4f068998f041b738cbbdb92b9b24435b4d3cea42fa4ef43c24a61982848c47707cddff11aa814a5dd9a6470e4e3d350b131615dabc8e0745dce1a633d187556c90de1518bb4ee6b4328132196f23f888312749608e5e9b27afe3d7ef511e5b11d78ef0bf5786e4dfeb51330c952456cd28a767bf98cab91f9042e2718af206fd7a45007cf52676bc14b260b83caf2ddcaa95b4ebb8fca614388dbfd7055bce7f3bf036cc7f0497402e3185025e3a12e1fec7b09f75c33242e6c9cf3f53c6c88053c26d1dccaa285d0e3facc22dd4c77df122b51d16c3dd4cbc579aa047ded5ffd234d314a139e31170074939bf8c253789fad3bdcb6050b1101b5ebeffa78b44d0440ce27358a1556837f2e310c3a12bbb59173deba237b1b38ac56cbe905ad6173a3079510770d9849b2fb53c140312a632e8f787b4c4f7dc884111ee7f11d06abb903a13ba15130fc6ce795782699ff6a66f24781fe1132159a3b0887a1e8e351587fc5f0c67cd805afcd743f090ef2d295f997c82659d9733a83172b8d61d106d4d2ac79cd17d44749945830e1e495debb7ab8695865418a99772383e7d4505b7d4e2e432044bb93fb5f415605477f0bebbbe89a06462b6a077331d46ff34196132ab3c3add2471cda8910d4088d076ad0080bd7fac335434454602eee7aba4a3260bb5a05751c428e1063ecb05fb0c291e37780c03b70f9b6a1a44072806e881a65269111d02eedb1db4f6240bb61a848d4d4564a58974ee294b4f1d9e8f4fb1737f544ec75b0c269d5b0356199d5fef2b6b9a648c9eb8cc283adcf55ffea6760ff099ff5379632c36ebc4a0a6419cbf7655ecd2c7afd4816dc6cf0d27680c60849b7055667df1ae5c5d003e252d1185fd31dbdeabd2f4a6a2ade5121d23012430c21d9117781fe296c8d59a12bf81c797355d89692016ff2612c1f0668e6a17f4bc36c8d3e43945a486bbca2f43d3e3840fb8ce419e01c4a9191b1adf92f73ea1d217edf26897fadb3fd4153b5303ce09358e7760a4d6369b8a28d3afccf516d2c38416befd2cd4e87e6d423ba6deca66278223f6c3a7a1efc2ed234613f11cbf9b2f81d1eeae91c406d35570346406e706ec0579b231c3640e0eb6cdef39d6513688d5ebc4ff8bab3404bf4c828e84ec94c9ec7845abfa2d95094eb2247cfb3e536e6b1cc0e7bf0d46e70b7980ff92868af4e7d97a3efa6484270859713f23a185a428704874c3710f2beb8aed6af9f5a693e22b81e1b04dcfe09a05b22ede14466713b298f6cb3be73e3488bd14fb4a527bf0d889a7ffd5281d290dc26e0bdd87ed3a680c169f87008dd70eb8bb229fb29da038e7b7eb3debce7408b5f351b6ebb9cbb60192b402d65e0bda137ffd53af5de31369b4e06e5a7d87db542d3a5ff5539af0e2f848b196ca28d3e59603d83f84a5df648a8b5a8dd8823ef46888488b17c32c6c4a8e45e9edd496a729a6cd0827b7abc41da0b8b1ada1c8920ddf341019ab495f9f988dac87426ccc8b69744033a73394b73e575ae257e329a3109d88a4ccf34d079d86b9445f8e6b3d008f82e6d1e31d2f2922629a0567cb93c405dee76b7f7ffa4c4a5cbb658f8b1a92436a9f7561f0fa6de60fab8f0361d17380d015ffcff1c834ee26f08e559fe5b96a96105b85cf59fe1986d28549be69179547b3460868692396edf8c9263d810a41cb5f9c4ef6ec9ecb7969f1520fcfb897e238f33f90acdfe927b4988b434751d62ec8183f86e8e940e64a8ec8ac765107d86b8dc344a2e9f52799f409fa3b9c380cf7b9547034b5126ef36f84c52c631756562366538b0a334a8fdafc9dee4fc2e2c9de4c7e3b4586a4bdc0a1af0da82a83cbcc0d97512d88efe2a641a8eef17b6b7f4d017f62915d00f0f398d1672aa7bdf7a677ff50c8ab5c3cf4d4d7595a4305925446a767eb241ec3155463d09b4faeac1d60800477af289f4fb1d7f557e3a2bbc2fbe272c711e229c0fbe2df0aa03349c9d702e38aa4d6383a1ad358f8a5a011ec2d86dee7e68a8c211091ad5fd3f811f085ae0658046b364586f5d51f2bc57815322b8402de57dd1c4450a1f35445521c16db0046d655383f878c68b078c7acb8d076fd4ce00ef0879d0e5ab703871616e9ee171ef91e805a299ed43cb0c17b19acd3a204e3c0c9dbabcea410ab33d0379d1a84a085a3b1f1c57d569dcca6fd60fffc27f938ea0671ed13a72fab0d034e170f57488b99d11a1df2c50707fd726f11c32c71d7b194352708dff1291b389faccc410af2d1aaf0573088141d</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">已加密，请输入密码查看。</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css"></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:2117675061@qq.com">吴思仁</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://wusiren.github.io/2021/04/26/%E8%BF%90%E7%AD%B9%E5%AD%A6%E7%AC%94%E8%AE%B00%EF%BC%9A%E7%B4%A2%E5%BC%95/">https://wusiren.github.io/2021/04/26/运筹学笔记0：索引/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://wusiren.github.io" target="_blank">终食之间</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E5%AD%A6%E6%9C%AF/">学术</a><a class="post-meta__tags" href="/tags/%E8%BF%90%E7%AD%B9%E5%AD%A6/">运筹学</a><a class="post-meta__tags" href="/tags/%E7%AC%94%E8%AE%B0/">笔记</a><a class="post-meta__tags" href="/tags/%E6%9C%BA%E5%AF%86/">机密</a><a class="post-meta__tags" href="/tags/%E5%AD%A6%E4%B9%A0/">学习</a></div><div class="post_share"><div class="social-share" data-image="https://i.loli.net/2021/04/26/W5ycKr21tMOUHbe.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2021/04/26/%E5%AD%A6%E6%9C%AF%E5%A4%B4%E8%A1%94/"><img class="prev-cover" src="https://i.loli.net/2021/04/26/9VCboENUea3STPK.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">学术头衔</div></div></a></div><div class="next-post pull-right"><a href="/2021/05/03/%E5%9B%B4%E6%A3%8B%E5%AD%A6%E4%B9%A0/"><img class="next-cover" src="https://i.loli.net/2021/05/03/eqjLsnOzcr7YKUh.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">围棋学习</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span> 相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2021/05/04/运筹学笔记1：绪论/" title="运筹学笔记1：绪论"><img class="cover" src="https://i.loli.net/2021/07/29/9B47jynxAGLvX25.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-05-04</div><div class="title">运筹学笔记1：绪论</div></div></a></div><div><a href="/2021/05/04/运筹学笔记2：线性规划/" title="运筹学笔记2：线性规划"><img class="cover" src="https://i.loli.net/2021/05/08/dG1wHriIlaeVk9F.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-05-04</div><div class="title">运筹学笔记2：线性规划</div></div></a></div><div><a href="/2021/05/14/运筹学笔记3：动态规划/" title="运筹学笔记3：动态规划"><img class="cover" src="https://i.loli.net/2021/07/29/8mep3nw7EkbHfug.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-05-14</div><div class="title">运筹学笔记3：动态规划</div></div></a></div><div><a href="/2021/05/29/ANOVA学习笔记/" title="ANOVA学习笔记"><img class="cover" src="https://i.loli.net/2021/05/29/mqJ5g8CrLN32VO7.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-05-29</div><div class="title">ANOVA学习笔记</div></div></a></div><div><a href="/2021/07/15/深度学习笔记3：线性神经网络/" title="深度学习笔记3：线性神经网络"><img class="cover" src="https://i.loli.net/2021/07/15/9velQWig2GPZLtT.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-07-15</div><div class="title">深度学习笔记3：线性神经网络</div></div></a></div><div><a href="/2021/07/05/深度学习笔记2：基本语法/" title="深度学习笔记2：基本语法"><img class="cover" src="https://i.loli.net/2021/07/05/Cn9zmdtGYVQcAwZ.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-07-05</div><div class="title">深度学习笔记2：基本语法</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="card-info-avatar is-center"><img class="avatar-img" src="/myFiles/wusirenlogo.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">吴思仁</div><div class="author-info__description">无耽小喜，无溺大悲。<br>心如止水，视死如归。</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">26</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length-num">36</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">分类</div><div class="length-num">6</div></a></div></div><a class="button--animated" id="card-info-btn" href="mailto:2117675061@qq.com"><i class="fas fa-envelope"></i><span>与我联系</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content"><center>热烈庆祝终食之间百日诞辰！💯🎊</center></div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2021/07/15/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B03%EF%BC%9A%E7%BA%BF%E6%80%A7%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/" title="深度学习笔记3：线性神经网络"><img src="https://i.loli.net/2021/07/15/9velQWig2GPZLtT.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="深度学习笔记3：线性神经网络"/></a><div class="content"><a class="title" href="/2021/07/15/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B03%EF%BC%9A%E7%BA%BF%E6%80%A7%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/" title="深度学习笔记3：线性神经网络">深度学习笔记3：线性神经网络</a><time datetime="2021-07-15T11:11:11.000Z" title="发表于 2021-07-15 19:11:11">2021-07-15</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/07/10/%E5%9C%A8Jupyter-Notebook%E4%B8%AD%E4%BD%BF%E7%94%A8Julia%E8%AF%AD%E8%A8%80/" title="在Jupyter Notebook中使用Julia语言"><img src="https://i.loli.net/2021/07/10/WrOfRJ5y2EPDZX6.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="在Jupyter Notebook中使用Julia语言"/></a><div class="content"><a class="title" href="/2021/07/10/%E5%9C%A8Jupyter-Notebook%E4%B8%AD%E4%BD%BF%E7%94%A8Julia%E8%AF%AD%E8%A8%80/" title="在Jupyter Notebook中使用Julia语言">在Jupyter Notebook中使用Julia语言</a><time datetime="2021-07-10T09:16:21.000Z" title="发表于 2021-07-10 17:16:21">2021-07-10</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/07/05/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02%EF%BC%9A%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/" title="深度学习笔记2：基本语法"><img src="https://i.loli.net/2021/07/05/Cn9zmdtGYVQcAwZ.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="深度学习笔记2：基本语法"/></a><div class="content"><a class="title" href="/2021/07/05/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02%EF%BC%9A%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/" title="深度学习笔记2：基本语法">深度学习笔记2：基本语法</a><time datetime="2021-07-05T06:56:35.000Z" title="发表于 2021-07-05 14:56:35">2021-07-05</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/07/05/%E7%83%AD%E7%83%88%E5%BA%86%E7%A5%9D%E7%BB%88%E9%A3%9F%E4%B9%8B%E9%97%B4%E7%99%BE%E6%97%A5%E8%AF%9E%E8%BE%B0%EF%BC%81/" title="热烈庆祝终食之间百日诞辰！"><img src="https://i.loli.net/2021/06/23/Icpv5kndEQizXRB.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="热烈庆祝终食之间百日诞辰！"/></a><div class="content"><a class="title" href="/2021/07/05/%E7%83%AD%E7%83%88%E5%BA%86%E7%A5%9D%E7%BB%88%E9%A3%9F%E4%B9%8B%E9%97%B4%E7%99%BE%E6%97%A5%E8%AF%9E%E8%BE%B0%EF%BC%81/" title="热烈庆祝终食之间百日诞辰！">热烈庆祝终食之间百日诞辰！</a><time datetime="2021-07-04T22:06:06.000Z" title="发表于 2021-07-05 06:06:06">2021-07-05</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/06/27/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01%EF%BC%9A%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/" title="深度学习笔记1：环境配置"><img src="https://i.loli.net/2021/06/28/dL8JpfhEc1VOzqB.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="深度学习笔记1：环境配置"/></a><div class="content"><a class="title" href="/2021/06/27/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01%EF%BC%9A%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/" title="深度学习笔记1：环境配置">深度学习笔记1：环境配置</a><time datetime="2021-06-27T07:07:06.000Z" title="发表于 2021-06-27 15:07:06">2021-06-27</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('https://i.loli.net/2021/04/26/W5ycKr21tMOUHbe.jpg')"><div id="footer-wrap"><div class="copyright">&copy;2021 By 吴思仁</div><div class="footer_custom_text">如有侵权  敬请联系</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="font-plus" type="button" title="放大字体"><i class="fas fa-plus"></i></button><button id="font-minus" type="button" title="缩小字体"><i class="fas fa-minus"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>if (!window.MathJax) {
+  window.MathJax = {
+    loader: {
+      source: {
+        '[tex]/amsCd': '[tex]/amscd'
+      }
+    },
+    tex: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"]],
+      tags: 'ams'
+    },
+    options: {
+      renderActions: {
+        findScript: [10, doc => {
+          for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+            const display = !!node.type.match(/; *mode=display/)
+            const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display)
+            const text = document.createTextNode('')
+            node.parentNode.replaceChild(text, node)
+            math.start = {node: text, delim: '', n: 0}
+            math.end = {node: text, delim: '', n: 0}
+            doc.math.push(math)
+          }
+        }, ''],
+        addClass: [200,() => {
+          document.querySelectorAll('mjx-container:not([display=\'true\']').forEach( node => {
+            const target = node.parentNode
+            if (!target.classList.contains('has-jax')) {
+              target.classList.add('mathjax-overflow')
+            }
+          })
+        }, '', false]
+      }
+    }
+  }
+  
+  const script = document.createElement('script')
+  script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'
+  script.id = 'MathJax-script'
+  script.async = true
+  document.head.appendChild(script)
+} else {
+  MathJax.startup.document.state(0)
+  MathJax.texReset()
+  MathJax.typeset()
+}</script></div><div class="aplayer no-destroy" data-id="6689046087" data-server="netease" data-type="playlist" data-fixed="true" data-mini="true" data-listFolded="true" data-order="random" data-preload="none" data-autoplay="false" muted></div><script defer="defer" id="ribbon" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-ribbon.min.js" size="150" alpha="0.6" zIndex="-1" mobile="true" data-click="true"></script><script id="click-show-text" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-show-text.min.js" data-mobile="false" data-text="热烈祝贺,🎊,终食之间,💖,百日诞辰,💯,热烈祝贺,🎉,终食之间,💕,百日诞辰,💯,热烈祝贺,🎈,终食之间,💗,百日诞辰,💯" data-fontsize="15px" data-random="false" async="async"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/gh/metowolf/MetingJS@1.2/dist/Meting.min.js"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = [
+  'title',
+  '#config-diff',
+  '#body-wrap',
+  '#rightside-config-hide',
+  '#rightside-config-show',
+  '.js-pjax'
+]
+
+if (false) {
+  pjaxSelectors.unshift('meta[property="og:image"]', 'meta[property="og:title"]', 'meta[property="og:url"]')
+}
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // Analytics
+  if (false) {
+    MtaH5.pgv()
+  }
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+
+  typeof preloader === 'object' && preloader.endLoading()
+})
+
+
+document.addEventListener('pjax:send', function () {
+  typeof preloader === 'object' && preloader.initLoading()
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><!-- hexo injector body_end start --><script async src="//at.alicdn.com/t/font_2032782_8d5kxvn09md.js"></script><!-- hexo injector body_end end --></body></html>
