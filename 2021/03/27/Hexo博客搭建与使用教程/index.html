@@ -436,12 +436,12 @@
 <p><strong>（1）使用原生<code>aplayer</code></strong></p>
 <p>如果是网络音乐，例如网易云音乐的《我和我的祖国》，则先获取其歌曲id，再在<code>.md</code>相应位置插入如下代码（获取网易云音乐播放链接的方法参考了<a target="_blank" rel="noopener" href="https://www.cnblogs.com/maoriaty/p/9103802.html">这里</a>）：<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&#123;% aplayer &quot;国际歌&quot; &quot;中央乐团合唱队&quot; &quot;http://music.163.com/song/media/outer/url?id=5281551.mp3</span><br><span class="line">&quot; %&#125;</span><br></pre></td></tr></table></figure></p>
 <p>效果如下（细节没有过多配置）：<br>
-        <div id="aplayer-OHMAglcP" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+        <div id="aplayer-ipojPomD" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
             <pre class="aplayer-lrc-content"></pre>
         </div>
         <script>
           var ap = new APlayer({
-            element: document.getElementById("aplayer-OHMAglcP"),
+            element: document.getElementById("aplayer-ipojPomD"),
             narrow: false,
             autoplay: false,
             showlrc: false,
@@ -458,12 +458,12 @@
         </script></p>
 <p>如果是本地音乐，如个人截取的一段声音<code>为祖国健康工作五十年.mp3</code>，则将其先放置在<code>myBlog\source\myFiles\</code>目录下，然后再在<code>.md</code>相应位置插入如下代码：<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% aplayer &quot;为祖国健康工作五十年&quot; &quot;不详&quot; &quot;/myFiles/为祖国健康工作五十年.mp3&quot; %&#125;</span><br></pre></td></tr></table></figure></p>
 <p>效果如下（细节没有过多配置，且音乐时长和时间轴显示不正常不知道为何）：<br>
-        <div id="aplayer-wpLZJuZq" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+        <div id="aplayer-FVjPTjIR" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
             <pre class="aplayer-lrc-content"></pre>
         </div>
         <script>
           var ap = new APlayer({
-            element: document.getElementById("aplayer-wpLZJuZq"),
+            element: document.getElementById("aplayer-FVjPTjIR"),
             narrow: false,
             autoplay: false,
             showlrc: false,
@@ -480,10 +480,10 @@
         </script></p>
 <p>该方法也可加入歌单，代码及效果如下（细节没有过多配置）：<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">&#123;% aplayerlist %&#125;</span><br><span class="line">&#123;</span><br><span class="line"><span class="code">    &quot;order&quot;: &quot;random&quot;,</span></span><br><span class="line"><span class="code">    &quot;loop&quot;:&quot;all&quot;,</span></span><br><span class="line"><span class="code">    &quot;showlrc&quot;: 3,</span></span><br><span class="line"><span class="code">    &quot;mutex&quot;: true,</span></span><br><span class="line"><span class="code">    &quot;theme&quot;: &quot;#b7daff&quot;,</span></span><br><span class="line"><span class="code">    &quot;music&quot;: [</span></span><br><span class="line"><span class="code">        &#123;</span></span><br><span class="line"><span class="code">            &quot;title&quot;: &quot;国际歌&quot;,</span></span><br><span class="line"><span class="code">            &quot;author&quot;: &quot;中央乐团合唱队&quot;,</span></span><br><span class="line"><span class="code">            &quot;url&quot;: &quot;http://music.163.com/song/media/outer/url?id=5281551.mp3&quot;,</span></span><br><span class="line"><span class="code">            &quot;pic&quot;: &quot;//p2.music.126.net/_lAvi41IfmPhw73Mxq2b8g==/19061133579368888.jpg&quot;,</span></span><br><span class="line"><span class="code">            &quot;lrc&quot;: &quot;&quot;</span></span><br><span class="line"><span class="code">        &#125;,</span></span><br><span class="line"><span class="code">        &#123;</span></span><br><span class="line"><span class="code">            &quot;title&quot;: &quot;为祖国健康工作五十年&quot;,</span></span><br><span class="line"><span class="code">            &quot;author&quot;: &quot;不详&quot;,</span></span><br><span class="line"><span class="code">            &quot;url&quot;: &quot;/myFiles/为祖国健康工作五十年.mp3&quot;,</span></span><br><span class="line"><span class="code">            &quot;pic&quot;: &quot;&quot;,</span></span><br><span class="line"><span class="code">            &quot;lrc&quot;: &quot;&quot;</span></span><br><span class="line"><span class="code">        &#125;</span></span><br><span class="line"><span class="code">    ]</span></span><br><span class="line"><span class="code">&#125;</span></span><br><span class="line"><span class="code">&#123;% endaplayerlist %&#125;</span></span><br></pre></td></tr></table></figure></p>
 
-        <div id="aplayer-NcWKHkOF" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;"></div>
+        <div id="aplayer-BhFLbIWT" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;"></div>
 			  <script>
 				  var options = {"narrow":false,"autoplay":false,"showlrc":3,"order":"random","loop":"all","mutex":true,"theme":"#b7daff","music":[{"title":"国际歌","author":"中央乐团合唱队","url":"http://music.163.com/song/media/outer/url?id=5281551.mp3","pic":""},{"title":"为祖国健康工作五十年","author":"不详","url":"/myFiles/为祖国健康工作五十年.mp3","pic":""}]};
-				  options.element = document.getElementById("aplayer-NcWKHkOF");
+				  options.element = document.getElementById("aplayer-BhFLbIWT");
 				  var ap = new APlayer(options);
 			    window.aplayers || (window.aplayers = []);
 				  window.aplayers.push(ap);
@@ -493,7 +493,7 @@
 <p>使用<code>MetingJS</code>需要在博客全局配置文件<code>myBlog/_config.yml</code>中加入如下代码：<br><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 音乐插件</span></span><br><span class="line"><span class="attr">aplayer:</span></span><br><span class="line">  <span class="attr">meting:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure></p>
 <p>之后再在<code>.md</code>文件的相应位置输入如下代码以插入网易云音乐中的《国际歌》（详细语法请参见<a target="_blank" rel="noopener" href="https://github.com/MoePlayer/hexo-tag-aplayer/blob/master/docs/README-zh_cn.md">官方说明</a>）：<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% meting &quot;5281551&quot; &quot;netease&quot; &quot;song&quot; %&#125;</span><br></pre></td></tr></table></figure></p>
 
-    <div id="aplayer-pRZEzDJV" class="aplayer aplayer-tag-marker meting-tag-marker"
+    <div id="aplayer-vGamscZL" class="aplayer aplayer-tag-marker meting-tag-marker"
          data-id="5281551" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#ad7a86"
     ></div>
 <p>但是此时会发现<code>meting</code>虽然能用了，但前面的<code>aplayer</code>却又不能用了。经反复尝试发现，修改主题配置文件<code>myBlog/_config.butterfly.yml</code>中的如下代码可解决此问题：<br><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Inject the css and script (aplayer/meting)</span></span><br><span class="line"><span class="attr">aplayerInject:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">per_page:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure></p>
